@@ -3,83 +3,165 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Site de gotham</title>
+    <title >SITE DO BATMAN</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        margin: 2;
+        color:rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        font-family: system-ui, arial, sans-serif;
+        line-height: 1.5;
+      }
 
+      .container{
+        width: 900px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      .box {
+        background: rgba(0, 0, 0, 0.75);
+        border: 1px solid rgb(240, 240, 255, 0.30);
+        border-radius: 12px;
+        padding: 14px;
+        margin-bottom: 12px;
+      }
+
+      h1, h2{
+        color: rgb(255, 211, 0);
+        margin: 0 0 8px;
+      }
+
+      .header-interno p{
+        margin: 0;
+        color: #d1d5db; 
+      }
+
+      P{
+        color:#F2E057;
+      }
+
+      #apresentacao{
+        border-left: 8px solid rgb(255, 221, 0);
+      }
+
+      .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+      }
+
+      .nav-link{
+        color: #000000;
+        display: inline-block;
+        text-decoration: none;
+        background: #F2E057;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-weight: 700;
+
+
+      }
+
+      .link{
+        color: #F2E057;
+
+      }
+      .gallery{
+        width:920px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+      }
+
+      .bat-img {
+        width: 220px;
+        height: 120px;
+        border: 2px solid aliceblue;
+        border-radius: 10px;
+      }
+
+      footer p{
+        color: rgb(233,21, 187);
+        margin: 6px 0 0;
+      }
+
+      .link{
+        color: rgb(255, 221, 0);
+        text-decoration: nome;
+      }
+
+      .link:hover{
+        text-decoration: underline;
+      }
+    </style>
   </head>
-  <style>
-    *{
-      box-sizing: border-box;
 
-    }
-
-    body{
-      margin: 0;
-      color: aliceblue;
-      background-color: black;
-      font-family: system-ui, Arial, sans-serif;
-      line-height: 1.5;
-      text-align:justify; 
-    }
-  </style>
   <body id="topo">
-    <!-- TODO 01: HEADER com H1 (título) e P (subtítulo) -->
-     <div class="container" id="pagina">
+    <div class="container" id="página">
       <header class="box" id="cabeçalho">
         <div class="header-interno">
-          <h1 class="titulo">Site do batman</h1>
-          <p>Bem vindo a <strong>Gotham</strong> <em>city</em></p>
+          <h1 class="titulo">
+            Site do Batman
+          </h1>
+          <p>
+            Bem-vindo a Gotham City: <strong>Vigilância</strong>, <em>tecnologia</em> e estratégia
+          </p>
         </div>
       </header>
       <nav class="box" id="menu">
-        <div class="interno"></div>
+        <div class="nav-interno">
           <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-item" href="#apresentacao">Gotham</a>
-            </li>
-            <li class="nav-item">
-              <a href="#galeria">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a href="#tabela">Missões</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href "#apresentacao">Gotham </a>
+              <li class="nav-item"><a class="nav-link" href "#galeria">Galeria </a>
+                <li class="nav-item"><a class="nav-link" href "#tabela">Missões </a>
+          </li>
+          </li>
+          </li>
           </ul>
-    </nav>
-        <main id="conteudo">
-            <div class="row" id="linha-1">
-                <section class="box-panel" id="apresentacao">
-                    <h2>Quem é o Bataman?</h2>
-                    <p>
-                        Batman (Bruce Wayne) é um persongem da DC comics que atua como justiceiro de Gotham. 
-                        Ele não tem superpoderes: sua força está em <strong>treinamento</strong>, <em>inteligencia</em> e recursos (ele é rico)
-                    </p>
+        </div>
+      </nav>
 
-                    <p>
-                        Nas Histórias, Gotham costuma representar problemas sociais reais: desigualdade,<br> corrupção e violência urbana.
-                        Muitos quadrinhos usam o Batman de <strong>crítica social</strong> <br>mostrando como decisões políticas e interesses econômicos, falhas
-                        nas instituições<br> e o autoritarism aftam o cotidiano das pessoas, especialmente nas periferias.
-                    </p>
-                </section>
-            </div>
-
-            <section class="box" id="galeria">
-                <h2>Galeria</h2>
-                <div class="gallery" id="galeria-imagens">
-                    <img class="bat-img" src="Batman_in_Justice_League_TV_series.png" alt="Personagem do Batman" width="220" height="120">
-                    <img class="bat-img" src="batman-design-logo-sign-icon-600nw-2317334183.webp" alt="Batman Aura" width="220" height="120">
-                    <img class="bat-img" src="San_Diego_Comic-Con_2024_Masquerade_-_Cosplay_of_Batman_3.jpg" alt="Batmana legal" width="220" height="120">
-                </div>
-            </section>
-        </main>
-        
-        <footer class="boxx=" id="rodape">
-            <p class="texto-rodape">
-              <a class="link" href="#topo">Topo</a>
+      <main id="conteúdo">
+          <section class="box" id="apresentacao">
+            <h2>Quem é o Batman?</h2>
+            <p>
+              Batman (Bruce Wayne) é um personagem da DC Comics que atua como um justiceiro em Gotham.<br> Ele não tem superpoderes:
+               Sua força está em <strong>treinamento</strong>, 
+              <em>Inteligência</em> e recursos (ou seja, rico).
             </p>
 
-            <p class="texto-rodape">
-              Exemplo para treino de HTML e CSS
+            <p>
+              Nas histórias, Gotham costuma representar problemas sociais reais:
+               desigualde, corrupção e violência urbana.<br> Muitos quadrinhos usam o Batman como forma de <strong>crítica social</strong>, 
+               mostrando como decisões políticas,
+               interesses econômicos,<br> falhas nas instituições e o autoritarismo afetam o cotidiano das pessoas, especialmente nas periferias.
             </p>
-        </footer>
+          </section>
+        <section class="box" id="Galeria">
+          <h2>Galeria</h2>
+          <div class="gallery" id="galeria-imagens">
+            <img class="bat-img" src="batman-design-logo-sign-icon-600nw-2317334183.webp" alt="batman aura roupa" >
+            <img class="bat-img" src="Batman_in_Justice_League_TV_series.png" alt="batman aura olhar" >
+            <img class="bat-img" src="San_Diego_Comic-Con_2024_Masquerade_-_Cosplay_of_Batman_3.jpg" alt="batman aura" >
+          </div>
+        </section>
+      </main>
+
+      <footer class="box" id="rodape">
+        <p class="texto-rodape">
+          <a class="link" href="#topo">Topo</a>
+        </p>
+        <p class="texto-rodape">
+          Exemplo para treino de HTML e CSS.
+        </p>
+      </footer>
     </div>
   </body>
 </html>
